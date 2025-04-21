@@ -23,7 +23,4 @@ TEST(Solution, numberOfArrays) {
     lower = 3;
     upper = 6;
     EXPECT_EQ(solution.numberOfArrays(differences, lower, upper), 0);
-
-
-
 }

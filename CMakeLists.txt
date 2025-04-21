@@ -4,11 +4,9 @@ project(leetcode_cpp)
 set(CMAKE_CXX_STANDARD 20)
 
 # 递归搜索 src/leetcode 目录及其子目录中的所有 .cpp 文件
-file(GLOB_RECURSE SOURCES "src/leetcode/**/*.cpp")
+file(GLOB_RECURSE SOURCES "src/leetcode/*.cpp")
 # 创建一个名为 leetcode_cpp_lib 的库
-add_library(leetcode_cpp_lib ${SOURCES}
-        src/leetcode/2101-2200/solution_2145.cpp
-)
+add_library(leetcode_cpp_lib ${SOURCES})
 
 
 # =========================测试单元========================= start
